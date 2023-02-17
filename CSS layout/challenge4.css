@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+.product {
+  border: 5px solid black;
+  font-family: sans-serif;
+  width: 825px;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.product-title {
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  margin: 0;
+  position: relative;
+  grid-column: 1/-1;
+}
+
+.product-price {
+  font-size: 24px;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  font-weight: bold;
+  color: #777;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.product-desc {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
+.color {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+.detail-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-detail {
+  list-style: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  grid-column: 1/-1;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.add-cart {
+  width: 100%;
+  padding: 15px 15px;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+}
+
+h2::before {
+  content: "sale";
+  background-color: #ec2f2f;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 7px 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+/* .price {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.product-key {
+  flex: 1;
+} */
+
+/* CSS-grid */

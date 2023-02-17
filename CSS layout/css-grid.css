@@ -1,0 +1,78 @@
+.el--1 {
+  background-color: blueviolet;
+}
+.el--2 {
+  background-color: orangered;
+  /* grid-column: 1/4; */
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.el--3 {
+  background-color: green;
+  height: 150px;
+}
+.el--4 {
+  background-color: goldenrod;
+}
+.el--5 {
+  background-color: palevioletred;
+}
+.el--6 {
+  background-color: steelblue;
+}
+.el--7 {
+  background-color: yellow;
+  /* grid-column: 2/3;
+  grid-row: 1/2; */
+}
+.el--8 {
+  background-color: crimson;
+}
+
+.container--1 {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+
+  /* CSS GRID */
+  display: grid;
+  /* grid-template-columns: 200px 150px 1fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr auto; */
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 300px 200px; */
+  /* gap: 40px; */
+  column-gap: 30px;
+  row-gap: 60px;
+
+  display: none;
+}
+
+.container--2 {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: black;
+  font-size: 40px;
+  margin: 30px;
+
+  width: 600px;
+  height: 600px;
+  gap: 50px;
+
+  /* CSS GRID */
+  display: grid;
+  grid-template-columns: 125px 200px 100px;
+  grid-template-rows: 250px 100px;
+
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-content: center; /*vertical alignment*/
+  /* align-content: space-between; */
+
+  align-items: center;
+  justify-items: center;
+}
